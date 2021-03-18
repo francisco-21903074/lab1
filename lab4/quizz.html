@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Francisco Lucas">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Tokyo">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+        <link rel="stylesheet" href="estilos.css">
+
+        <title>Tokyo</title>
+    </head>
+    <body> 
+
+        <header>
+            <h1>Tokyo</h1>
+            <figure>
+                 <img src="images/tokyo.png" width="300" height="220">
+            </figure>
+        </header>
+    
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="index.html">Introdução</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informações</a>
+            <a href="quizz.html"><b>Quizz</b></a>
+            <a href="comentarios.html">Comentários</a>
+            <a href="html5-css.html">HTML5 e CSS</a>
+        </nav>
+        
+        <main>
+        <section>
+
+        <h3>Quizz</h3>
+        <fieldset>
+            <form method = "post"
+                action = "mailto: franciscomlvinagre@gmail.com" id="form1" autocomplete="on"></form>
+                <legend><span style="font-size: 180%;"><b>Identificação</b></span></legend>
+            <p>Nome: <input type= "text" name="nome" form="form1" required size="30"></p>
+            <p>Apelido: <input type="text" name="idade" form="form1" required size="30"></p>
+            <p>Email: <input type="text" name="idade" form="form1" required size="50"></p>
+           
+        </fieldset>
+        <br>
+        </form>
+        <fieldset>
+            <legend><span style="font-size: 180%;"><b>Quizz</b></span></legend>
+            <p><b>1. </b>Onde se situa Tokyo? <input type= "text" name="nome" placeholder="País" size="5" maxlength="5" required></p>
+            <p><b>2. </b>Tokyo é prefeitura mais populada do Japão ? <input type= "text" name="nome" value = "Sim" readonly required></p>
+           
+           
+
+            <form method = "post"
+                action = "mailto: franciscomlvinagre@gmail.com">
+
+                <p><b>3. </b>Qual é o nome da estação da área que abriga a maior parte dos principais museus de Tóquio?</p>
+                <input type="radio"  id="ueno" name="estação" value="ueno" required>
+                <label for="Ueno">Ueno</label><br>
+                <input type="radio"  id="asakusa" name="estação" value="asakusa" required>
+                <label for="Asakusa">Asakusa</label><br>
+                <input type="radio" id="roppongi" name="estação"  value="roppongi" required>
+                <label for="roppongi">Roppongi</label><br>
+                <input type="radio" id="shinjuku" name="estação"  value="shinjuku" required>
+                <label for="shinjuku">Shinjuku</label><br>
+                
+                <p><b>4. </b>Em 1923, um grande desastre atingiu Tóquio, matando mais de 70.000 pessoas. Qual foi ?</p>
+                <input type="checkbox"   value="terramoto"required>
+                <label for="terramoto">The Great Kanto Earthquake</label><br>
+                <input type="checkbox"   value="Bloody Sunday" required>
+                <label for="Bloody Sunday">Bloody Sunday</label><br>
+                <input type="checkbox"   value="The Great Samurai Uprising" required>
+                <label for="The Great Samurai Uprising">The Great Samurai Uprising</label><br>
+                <input type="checkbox"   value="fujisan" required>
+                <label for="The Great Eruption of Fuji-san">The Great Eruption of Fuji-san</label><br>
+            
+                <p><label for="meiji"><b>5. </b>Quando acabou o Período Meiji?</label></p>
+                <input type="date" id="meiji" name="meiji"><br>
+                <br>
+                
+                <label for="cherrycolor"><b>6. </b>Qual é a cor das Cherry Blossoms ?</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ffc0cb">
+                <br>
+                <br>
+
+                <label for="quantity"><b>7. </b>Quantas vilas tem Tokyo ?</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+                <br>
+                <br>
+
+                <label for="percentage"><b>8. </b>Percentagem da população do Japão que vive em Tokyo ?</label>
+                <input type="range" id="percentage" value ="10" name="percentage" min="0" max="20" oninput="percentageN.value = parseInt(percentage.value)"><output name="percentageN" for="percentage">0</output> %
+                <br>
+                <br>
+
+                <input type="image" src="images/tokyo.gif" alt="Tokyo" width="100" height="100">
+                <br>
+                <input type="submit">
+              </form>
+             </fieldset>
+        </section>
+             <svg width="500" height="251">
+                <image href="images/wordcloud2.png" width="100%" height="100%"></image>
+                <a href="index.html">
+                    <polygon points="144,27 128,94 406,146 421,78" opacity="0.2" >   
+                    </polygon>
+                </a>
+                <a href="quizz.html">
+                    <polygon points="71,136 66,166 147,186 153,160" opacity="0.2" >   
+                    </polygon>
+                </a>
+                <a href="multimedia.html">
+                    <polygon points="94,112 93,135 263,169 273,148" opacity="0.2" >
+                    </polygon>
+                </a>
+                <a href="../index.html">
+                    <polygon points="356,153 365,171 445,155 443,142" opacity="0.2" >    
+                    </polygon>
+                </a>
+                <a href="comentarios.html">
+                    <polygon points="23,184 18,202 104,216 111,203" opacity="0.2" >    
+                    </polygon>
+                </a>
+                <a href="local.html">
+                  <polygon points="105,183 119,230 366,182 353,148" opacity="0.2" >         
+                    </polygon>
+                </a>
+                <a href="info.html">
+                    <polygon points="270,30 280,78 371,60 365,18" opacity="0.2">                 
+                    </polygon>
+                </a>      
+            </svg>
+        </main>
+        <footer>
+            <p>Francisco Lucas, 21903074 , Universidade Lusófona , 2ºano</p>
+        </footer>
+    </body>
+    
+</html>

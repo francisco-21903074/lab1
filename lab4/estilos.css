@@ -1,0 +1,67 @@
+body{
+    
+    font-family: 'Muli';font-size: 18px;
+    background-color: #A8D0E6;
+}
+
+div  p{
+    background-color:aquamarine;
+}
+
+section > h3{
+    background-color: #F76C;
+    width: 7%;
+    
+}
+
+h3{
+    
+    font-family: 'Exo 2';
+    color: white;
+}
+
+section + h3{
+color: violet;
+}
+
+a[target = _blank]{
+    background-color: #F8E9A1;
+}
+h1{
+    background-color: #F76C;
+    font-family: 'Exo 2';
+    font-size: 50px;
+    color: white;
+    width: auto;
+}
+
+#introImp{
+    background-color: steelblue;
+}
+
+#introImp::first-letter{
+    font-size: 30px;
+    color:white;
+    opacity: 0.7;
+}
+
+#poema{
+    background-color: #374785;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {color: yellow}
+a:visited{color: black}
+a:hover{color: white}
+a:active{color: #F76C}
+
+a::before{
+    content: "◼️";
+}
+
+p.quizz {display: list-item;}
+
+h2.escondido {
+    visibility: hidden;
+    height: 2px;
+  }
