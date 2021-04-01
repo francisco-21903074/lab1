@@ -1,0 +1,151 @@
+body{
+    
+    font-family: 'Muli';font-size: 18px;
+    background-color: #A8D0E6;
+}
+
+.item1{
+    grid-area: nav;
+}
+.item2{
+    background-color:aquamarine;
+}
+.item4 { 
+    grid-area: header;
+ }
+.item5{
+    grid-area: main;
+}
+section > h3{
+    background-color: #F76C;
+    width: 7%;
+    
+}
+
+h3{
+    
+    font-family: 'Exo 2';
+    color: white;
+}
+
+section + h3{
+color: violet;
+}
+
+
+h1{
+    background-color: #F76C;
+    font-family: 'Exo 2';
+    font-size: 50px;
+    color: white;
+    width: auto;
+}
+
+#introImp{
+    background-color: steelblue;
+}
+
+#introImp::first-letter{
+    font-size: 30px;
+    color:white;
+    opacity: 0.7;
+}
+
+#poema{
+    background-color: #374785;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {color: yellow}
+a:visited{color: black}
+a:hover{color: white}
+a:active{color: #F76C}
+
+
+p.quizz {display: list-item;}
+
+h2.escondido {
+    visibility: hidden;
+    height: 2px;
+  }
+
+.flex-container {
+    display: flex;
+    height: 40px;
+    background-color: aquamarine;
+    justify-content: center;
+    animation-name: animacao;
+    animation-duration: 2s;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'nav nav'
+    'main main'
+    'left right'
+    'footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    animation-name: animacao;
+    animation-duration: 2s;
+    }
+    
+.grid-container > div {
+    background-color: rgba(104, 15, 15, 0.8);
+     text-align: center;
+      }
+
+
+
+ .flexbox{
+        display: flex;
+        height: 240px;
+        justify-content: center;
+        animation-name: animacao;
+        animation-duration: 1.5s;
+}   
+
+.flexbox > div {
+    background-color: dodgerblue;
+    margin: 10px;
+    padding: 10px;
+  }
+  .galeria{
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    color: maroon;
+}
+a > img:hover {
+    box-shadow: 0 0 2px 2px black;
+  }
+  .blured:hover {
+    filter:blur(2px);
+    transform: scaleX(-1);
+}
+
+.rotated:hover {
+    filter:hue-rotate(90deg);
+}
+
+.greyscale:hover {
+    filter:grayscale(100%);
+}
+.saturado:hover{
+    filter:saturate(5);
+}
+
+#ofcyes:hover {
+    filter:saturate(5);
+}
+
+  @keyframes animacao {
+    0%   {background-color:orangered; left:0px; top:0px;}
+  25%  {background-color:aquamarine; left:200px; top:0px;}
+  50%  {background-color:orangered; left:200px; top:200px;}
+  75%  {background-color:aquamarine; left:0px; top:200px;}
+  100% {background-color:orangered; left:0px; top:0px;}
+}
